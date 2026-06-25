@@ -1,0 +1,18 @@
+{
+  "name": "dummyjson-api-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API tests for DummyJSON auth and carts endpoints",
+  "scripts": {
+    "test": "playwright test",
+    "test:auth": "playwright test tests/auth.spec.ts",
+    "test:carts": "playwright test tests/carts.spec.ts",
+    "test:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.1",
+    "@types/node": "^24.0.3",
+    "dotenv": "^17.4.2",
+    "typescript": "^5.8.3"
+  }
+}
